@@ -1,39 +1,134 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Bristol Classical Music Strings Group
 
-Welcome,
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# A responsive website of a Classical Strings Music group to show what they offer to players, attract new participants and efficiently show the scheduling of classes and workshops 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Code Institute - Milestone Project 1 
 
-## Codeanywhere Reminders
+### HTML/CSS Essentials - Users Sentric, Static Front-End Website
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### By Marcus Parker
 
-`python3 -m http.server`
+View Repository in GitHub Pages: https://github.com/mparker-landt/Milestone_Project_1
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+View Website Link: https://github.com/mparker-landt/Milestone_Project_1
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## The Why
 
-`http_server`
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+ 
+## The Business Goal
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+## (UX) User Experience: 
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- ### User Stories
 
----
+  - #### First time Users Goals:
 
-Happy coding!
+  - #### Returning Users Goals:
+
+  - #### Frequent Users Goals:
+
+## Design:
+
+
+
+### Design Brief:
+
+
+## Wireframes:
+
+
+## Features
+
+ - #### Existing Features:
+     
+
+   #### (future features)
+
+
+## Technologies: 
+
+### Languages used: 
+
+- [HTML](https://en.wikipedia.org/wiki/HTML5)
+
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+
+### Also I used: 
+
+
+## Testing: 
+
+### Testing results:
+
+
+
+### Lighthouse results:
+
+
+### Testing User Stories from User Experience (UX) Section
+
+ #### First Time Visitor Goals: 
+
+  ###### As a First Time Visitor, I want to easily see the studio offers, find when the classes take place (timetable) also the prices and offers:
+     
+
+  ##### As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content and find where the studio is located:
+
+
+  ##### As a first time visitor I want to see some stories and reviews from other ussers to get to know the studio. I also want to find the links to the social media to find more information about the studio and users thoughts and reviews and be able to determine how trasted and known the studio is:
+
+    
+ #### Returning Visitor Goals: 
+
+  ##### As a returning Visitor, I want to book easily classes and workshops:
+   
+
+  ##### As a returning Visitor, I want to find any new updates in the timetable and workshops section:
+
+
+  ##### As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have:
+
+
+ #### Frequent Users Goals:
+
+##### As a Frequent User, I want to be able to book a class easily:
+
+
+##### As a Frequent User, I want to check to see if there are any new workshops.
+
+
+##### As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the class timetable, website workshops or events.
+
+
+
+## Deployment:
+
+
+### Inception:
+
+
+#### Deployment to GitHub Pages:
+
+
+
+### Cloning repository:
+
+
+
+### Forking repository:
+
+
+
+## Credits:
+
+## Aknowledgements:
+
+
+
+### Read me based on the Code Institute README sample:
+https://github.com/Code-Institute-Org/ci-full-template
