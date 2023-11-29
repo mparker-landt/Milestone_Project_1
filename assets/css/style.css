@@ -23,12 +23,14 @@ header {
 
 .hero-image {
     background-image: url("../images/orchestra.jpg");
-    background-color: #cccccc;
+    background-color: #492600;
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.3);
 }
 
 .hero-text {
@@ -66,13 +68,13 @@ header {
 }
 
 .navbar li:hover {
-    background-color: #790800;
-    color: inherit;
+    background-color: #492600;
+    color: white;
 }
 
 .navbar li.active {
-    background-color: #790800;
-    color: inherit;
+    background-color: #492600;
+    color: white;
 }
 
 a, a:hover, a:visited, a:active {
@@ -91,26 +93,37 @@ section {
 
 
 .footer {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
+    height: 150px;
     width: 100%;
     background-color: #492600;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align: center;
     color: white;
     font-size: 175%;
-    text-align: center;
+}
+
+#social-networks {
+    padding: 15px;
 }
 
 #social-networks li {
     list-style-type: none;
     display: inline;
+    margin-left: 10px;
 }
 
-#social-networks li:hover {
-    background-color: #790800;
-    color: white;
-}
+/* #social-networks li:hover {
+    background-color: #e5b079;
+    color: #492600;
+} */
 
 #copyright {
+    padding: 15px;
     font-size: x-small;
 }
