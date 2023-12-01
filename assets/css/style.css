@@ -88,11 +88,41 @@ section {
 #section-classes {
     float: left;
     width: 50%;
+    height: inherit;
 }
 
 #section-signup {
     float: right;
     width: 50%;
+    height: inherit;
+}
+
+#classes-box {
+    height: 100%;
+
+    background-color: #492600;
+    background-image: url("../images/cello_child.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+
+    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.3);
+}
+
+#signup-box {
+    height: 100%;
+
+    background-color: #492600;
+    background-image: url("../images/violin.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+
+    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.3);
 }
 
 #address {
@@ -103,7 +133,7 @@ section {
 #map {
     right: 0;
     top: 0;
-    height: 100%;
+    height: 94%;
     width: 50%;
     float: right;
 }
@@ -113,7 +143,7 @@ section {
     /* position: fixed; */
     left: 0;
     bottom: 0;
-    height: 150px;
+    height: 165px;
     width: 100%;
     background-color: #492600;
 
