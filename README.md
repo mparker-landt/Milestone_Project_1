@@ -60,6 +60,12 @@ View Website Link: https://github.com/mparker-landt/Milestone_Project_1
 
 ### Also I used: 
 
+- https://picocss.com/
+- http://getskeleton.com/
+- https://www.pexels.com/
+- https://fontawesome.com/
+- https://fonts.google.com/
+- https://mycolor.space/
 
 ## Testing: 
 

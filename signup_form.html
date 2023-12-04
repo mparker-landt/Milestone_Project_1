@@ -40,19 +40,73 @@
             </nav>
         </header>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <!-- Section to sign up to play in the orchestra -->
+        <!-- Name, Surname, Email, Number,  -->
+        <!-- Option for player, child player, teacher -->
+        <!-- Box for details about music knowledge -->
+        <section>
+            <form action="https://formdump.codeinstitute.net" method="POST">
+                <fieldset>
+                    <legend>Your Details:</legend>
 
-        <section>TEST PAGE</section>
+                    <div>
+                        <label for="name-field">First Name</label>
+                        <input id="name-field" type="text" name="first-name" placeholder="First Name" required>
+                        <label for="surname-field">Surname</label>
+                        <input id="surname-field" type="text" name="surname" placeholder="Surname" required>
+                    </div>
+                    <div>
+                        <label for="email-field">Email</label>
+                        <input id="email-field" type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div>
+                        <label for="number-field">Contact Number</label>
+                        <input id="number-field" type="text" name="number" placeholder="Contact Number">
+                    </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+                    <label for="experience-field">Experience</label>
+                    <select name="experience" id="experience">
+                        <option value="none">No musical experience</option>
+                        <option value="beginner">Beginner (LCM/ABRSM Grades 1-2)</option>
+                        <option value="intermediate">Medium (LCM/ABRSM Grades 3-5)</option>
+                        <option value="senior">Experienced (LCM/ABRSM Grades 6-8)</option>
+                        <option value="expert">Professional (LCM/ABRSM Diploma)</option>
+                    </select>
+
+                    <div>
+                        <label for="other-field">Any other information</label>
+                        <textarea id="other-field" rows="4" cols="87" name="feedback"></textarea>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Contact details for orchestra -->
+        <section>
+            <h2>Our contact details</h2>
+            <div id="address">
+            <h3>Address:</h3>
+            <p>Allegro Symphony Orchestra & Strings Group</p>
+            <p>Bristol Old Vic</p>
+            <p>King St</p>
+            <p>Bristol</p>
+            <p>BS1 4ED</p>
+
+            <br>
+
+            <h2>Contact us:</h2>
+            <p>Phone Number: 07#########</p>
+            <a href="https://mail.google.com/" target="_blank" aria-label="link to send us an email">Email at allegrosymphony@gmail.com</a>
+        </section>
+
+        <!-- Email input for optional newsletter -->
+        <section>
+            <form action="https://formdump.codeinstitute.net" method="POST">
+                <legend>Newsletter</legend>
+                <label for="newsletter-field">Email</label>
+                <input id="newsletter-field" type="email" name="newsletter" placeholder="Your email">
+            </form>
+        </section>
 
         <!-- footer including social media links, copyright and back to top nav -->
         <footer class="footer">
