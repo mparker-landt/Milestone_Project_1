@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"> -->
         <!-- <link rel="stylesheet" href="assets/css/Skeleton-2.0.4/Skeleton-2.0.4/css/skeleton.css"> -->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style_bones.css">
     </head>
 
     <body>
@@ -42,17 +42,16 @@
 
         <!-- section about, has information about the overall website -->
         <section id="section-about">
-            <img src="assets/images/orchestra-break.jpg" alt="orchestra players chatting during break">  <!-- class="img-left" -->
+        
+            <div id="about-img">
+                <img src="assets/images/orchestra-break.jpg" alt="orchestra players chatting during break">  <!-- class="img-left" -->
+            </div>
 
-            <h2> About Allegro Symphony Orchestra</h2>
-
-            <div class="text-center">
+            <div id="about-para" class="text-center">
+                <h2> About Allegro Symphony Orchestra</h2>
                 <p>Established in 1912, the Allegro Symphony Orchesta started out as a simple string quarter performing in the backroom of a local cafe.</p>
-                <br>
                 <p>What quickly grew into a full orchestra has kept its tradition of bringing music and joy to the next generation.</p>
-                <br>
                 <p>As well as carrying on the string quartets, the Allego group also offers individual lessons. We also collaborate with other instrument groups to join as a full orchestra fortnightly.</p>
-                <br>
                 <p>Important to us is the teaching and carrying on of music tradition too, individual lessons and regular orchestras are offered to juniors who have the opportunity to learn musical skills and work as a group to create beautiful sounds.</p>
             </div>
             
@@ -92,8 +91,9 @@
                 <p>Phone Number: 07#########</p>
                 <a href="https://mail.google.com/" target="_blank" aria-label="link to send us an email">Email at allegrosymphony@gmail.com</a><br>
             </div>
-
-            <iframe id="map" src="https://bit.ly/2QVfkiy" height="300" width="100%"></iframe>
+            <div id="map">
+                <iframe src="https://bit.ly/2QVfkiy" height="100%" width="100%"></iframe>
+            </div>
         </section>
 
         <!-- footer including social media links, copyright and back to top nav -->

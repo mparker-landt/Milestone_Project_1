@@ -1,7 +1,4 @@
-# Bristol Classical Music Strings Group
-
-
-# A responsive website of a Classical Strings Music group to show what they offer to players, attract new participants and efficiently show the scheduling of classes and workshops 
+# Allegro Symphony Orchestra and Strings Group
 
 ## Code Institute - Milestone Project 1 
 
@@ -11,15 +8,21 @@
 
 View Repository in GitHub Pages: https://github.com/mparker-landt/Milestone_Project_1
 
-View Website Link: https://github.com/mparker-landt/Milestone_Project_1
+View Website Link: https://mparker-landt.github.io/Milestone_Project_1/
 
 ## The Why
 
+To advertise a classical music orchestra and strings group in Bristol and Southwest area. 
 
+Potential players can sign up for lessons and voluntarily participate in a regularly scheduled orchestra. 
  
 ## The Business Goal
 
+To attract complete novices with no music knowledge and offer lessons for them to learn classical music with one of the string instruments.
 
+To attract players with lesson services and the ability to participate in a orchestra group.
+
+To offer lessons and orchestra to juniors so they have the accessibility to play with their peers.
 
 ## (UX) User Experience: 
 
@@ -28,9 +31,17 @@ View Website Link: https://github.com/mparker-landt/Milestone_Project_1
 
   - #### First time Users Goals:
 
+  - As a new beginner I want to quickly find if services are provided for complete novices so I can start practicing music.
+
   - #### Returning Users Goals:
 
+  - As an experienced musician I want to find easily when and where classes and workshops are so I can assess the logistics of travel and scheduling.
+
+  - As an experienced musician I want to be able to quickly sign up to the orchestra and music services provided so I can start lessons and participate in group sessions as quick as possible
+
   - #### Frequent Users Goals:
+
+  - As a 
 
 ## Design:
 
@@ -41,13 +52,47 @@ View Website Link: https://github.com/mparker-landt/Milestone_Project_1
 
 ## Wireframes:
 
+Wireframes were created with draw.io
+Basic structure for Laptop and larger screens:
+
+Home Page
+![wireframe](assets/images/readme/Milestone1-Home.png)
+
+About Page
+![wireframe](assets/images/readme/Milestone1-About.png)
+
+Classes Page
+![wireframe](assets/images/readme/Milestone1-Classes.png)
+
+Contact Page
+![wireframe](assets/images/readme/Milestone1-Contact.png)
+
+
+Basic structure for Mobile and smaller screens:
+
+Home Page:
+![wireframe](assets/images/readme/Milestone1-Home_Mobile.png)
+
+About Page
+![wireframe](assets/images/readme/Milestone1-About_Mobile.png)
+
+Classes Page
+![wireframe](assets/images/readme/Milestone1-Classes_Mobile.png)
+
+Contact Page
+![wireframe](assets/images/readme/Milestone1-Contact_Mobile.png)
+
 
 ## Features
 
- - #### Existing Features:
-     
-
-   #### (future features)
+- Header with image and title   
+- Navigation bar with active and hover capabilities
+- Footer with Social Media links and copyright information.
+- Back to top button at the bottom of the page.
+- Homepage with visual links to other pages, contact information and iframe map showing location.
+- About page showing information about VIP and links to other websites that the music group collaborates with.
+- Classes Page explaining about the different classes and showing easy visualisation of when and where they occur.
+- Signup Page with form to sign up and a newsletter seperate signup box.
 
 
 ## Technologies: 
@@ -58,10 +103,14 @@ View Website Link: https://github.com/mparker-landt/Milestone_Project_1
 
 - [CSS](https://en.wikipedia.org/wiki/CSS)
 
-### Also I used: 
+
+### Frameworks used:
 
 - https://picocss.com/
 - http://getskeleton.com/
+
+### Other resources and tools: 
+
 - https://www.pexels.com/
 - https://fontawesome.com/
 - https://fonts.google.com/
@@ -71,7 +120,8 @@ View Website Link: https://github.com/mparker-landt/Milestone_Project_1
 
 ### Testing results:
 
-
+- https://validator.w3.org/
+- https://jigsaw.w3.org/css-validator/
 
 ### Lighthouse results:
 
@@ -113,6 +163,17 @@ View Website Link: https://github.com/mparker-landt/Milestone_Project_1
 
 
 ## Deployment:
+
+- VS Code
+- Sourcetree
+- Github & Git
+- Firefox Web Browser
+- Google Web Browser
+- Edge Web Browser
+- Safari Web Browser
+
+- Tested for devices:
+- 
 
 
 ### Inception:
