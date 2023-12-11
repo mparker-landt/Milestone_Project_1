@@ -299,14 +299,20 @@ section {
 #section-signupForm {
     background-color: inherit;
     border: 5px solid #c4a484;
-    text-align: left;
+    text-align: center;
     float: left;
     width: 48%;
     height: 400px;
 }
 
+#section-signupForm fieldset {
+    text-align: center;
+    display: block;
+}
+
 #section-signupForm div {
     border: 1px solid #c4a484;
+    width: 100%;
 }
 
 #section-signupForm legend {
@@ -315,6 +321,12 @@ section {
 
 .block-label {
 	display: block;
+}
+
+fieldset legend {
+    display: table;
+    margin: auto;
+    text-align: center;
 }
 /*******************************************************************************************************************************************************/
 
