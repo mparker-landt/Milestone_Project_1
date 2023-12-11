@@ -102,24 +102,52 @@ section {
     height: 365px;
 }
 
-#section-left {
-    /* background-color: red; */
+.section-left {
     text-align: center;
     height: 365px;
     width: 48%;
-    margin: 1px;
+    margin-left: 10px;
     float: left;
-    /* display: inline; */
+}
+
+.section-left img {
+    height: 90%;
+    bottom: 0;
+    float: left;
+    padding-left: 5%;
+}
+
+.section-left div {
+    height: 90%;
+    text-align: center;
+    bottom: 0;
+    float: right;
+    width: 60%;
+    margin-top: 5%;
 }
 
 .section-right {
-    /* background-color: blue; */
     text-align: center;
     height: 365px;
     width: 48%;
-    margin: 1px;
+    margin-left: 10px;
+    float: left;
+}
+
+.section-right img {
+    height: 90%;
+    bottom: 0;
     float: right;
-    /* display: inline; */
+    padding-right: 5%;
+}
+
+.section-right div {
+    height: 90%;
+    text-align: center;
+    bottom: 0;
+    float: left;
+    width: 60%;
+    margin-top: 5%;
 }
 /********************************************************************************************************************************************************/
 
@@ -151,26 +179,10 @@ section {
 /********************************************************************************************************************************************************/
 
 
-.img-left {
-    height: 50%;
-    /* margin: 25px; */
-    /* float: left; */
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .text-center {
     display: inline-block;
     vertical-align: middle;
     width: 50%;
-}
-
-.img-right {
-    height: 50%;
-    /* margin: 25px; */
-    /* float: right; */
-    display: inline-block;
-    vertical-align: middle;
 }
 
 
@@ -314,11 +326,6 @@ section {
     margin-left: 10px;
 }
 
-/* #social-networks li:hover {
-    background-color: #e5b079;
-    color: #492600;
-} */
-
 #copyright {
     padding: 15px;
     font-size: x-small;
@@ -327,18 +334,27 @@ section {
 
 
 /* Image Box flip actions *******************************************************************************************************************************/
+.flip-img {
+    /* height: 100%; */
+    width: 414px;
+    height: 292px;
+}
+
 .flip-box {
     background-color: transparent;
-    width: 300px;
-    height: 80%;
-    border: 1px solid blue;
+    width: 414px;
+    height: 292px;
+    /* border: 1px solid blue; */
     perspective: 1000px;
+    padding-left: 5%;
+    padding-top: 1%;
+    display: inline-block;
 }
   
 .flip-box-inner {
-position: relative;
-width: 100%; 
-/* height: 100%; */
+/* position: relative; */
+width: 414px; 
+height: 100%;
 text-align: center;
 transition: transform 0.8s;
 transform-style: preserve-3d;
@@ -350,10 +366,19 @@ transform: rotateY(180deg);
 
 .flip-box-front, .flip-box-back {
 position: absolute;
-width: 100%;
+width: 414px; 
 height: 100%;
 -webkit-backface-visibility: hidden;
 backface-visibility: hidden;
+}
+
+.button-p {
+    color: white;
+    text-decoration: underline;
+}
+
+.flip-box-back p {
+    padding-top: 5%;
 }
 
 .flip-box-front {
@@ -362,7 +387,7 @@ color: black;
 }
 
 .flip-box-back {
-background-color: green;
+background-color: #492600;
 color: white;
 transform: rotateY(180deg);
 }
