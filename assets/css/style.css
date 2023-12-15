@@ -13,6 +13,17 @@ body {
     color: #402e32;
     font-family: 'Montserrat', sans-serif;
 }
+
+h2,
+h3 {
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+p {
+    padding: 2px;
+}
+
 /********************************************************************************************************************************************************/
 
 
@@ -36,7 +47,7 @@ header {
     background-size: cover;
     position: relative;
 
-    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.3);
+    box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .3);
 }
 
 .hero-text {
@@ -82,14 +93,19 @@ header {
     background-color: #492600;
     color: white;
 }
+
 /********************************************************************************************************************************************************/
 
 
 /* General links properties *****************************************************************************************************************************/
-a, a:hover, a:visited, a:active {
+a,
+a:hover,
+a:visited,
+a:active {
     color: inherit;
     text-decoration: none;
 }
+
 /********************************************************************************************************************************************************/
 
 
@@ -98,8 +114,8 @@ section {
     background-color: #c4a484;
     text-align: center;
     margin: 10px;
-    /* height: 500px;  */
     height: 365px;
+    /* height: fit-content; */
 }
 
 .section-left {
@@ -119,7 +135,7 @@ section {
 
 .section-left div {
     height: 90%;
-    text-align: center;
+    text-align: left;
     bottom: 0;
     float: right;
     width: 60%;
@@ -143,12 +159,13 @@ section {
 
 .section-right div {
     height: 90%;
-    text-align: center;
+    text-align: right;
     bottom: 0;
     float: left;
     width: 60%;
     margin-top: 5%;
 }
+
 /********************************************************************************************************************************************************/
 
 
@@ -176,6 +193,7 @@ section {
     bottom: 0;
     float: left;
 }
+
 /********************************************************************************************************************************************************/
 
 
@@ -192,6 +210,7 @@ section {
     width: 50%;
     height: inherit;
 }
+
 /********************************************************************************************************************************************************/
 
 
@@ -203,9 +222,10 @@ section {
 }
 
 #classes-box {
-    height: 100%;
+    height: 650px;
 
     background-color: #492600;
+    color: white;
     background-image: url("../images/cello_child.jpg");
 
     background-position: center;
@@ -213,13 +233,17 @@ section {
     background-size: cover;
     /* position: relative; */
 
-    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.3);
+    box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .3);
+
+    display: grid;
+    align-items: center;
 }
 
 #signup-box {
-    height: 100%;
+    height: 650px;
 
     background-color: #492600;
+    color: white;
     background-image: url("../images/violin.jpg");
 
     background-position: center;
@@ -227,8 +251,12 @@ section {
     background-size: cover;
     /* position: relative; */
 
-    box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.3);
+    box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .3);
+
+    display: grid;
+    align-items: center;
 }
+
 /********************************************************************************************************************************************************/
 
 
@@ -245,6 +273,7 @@ section {
     width: 50%;
     float: right;
 }
+
 /*******************************************************************************************************************************************************/
 
 
@@ -265,8 +294,19 @@ section {
     padding: 30px 0 0 10px;
     text-align: center;
     margin: 2px;
+    overflow: scroll;
+    scrollbar-color: #492600 white;
+    scrollbar-width: auto;
 }
 
+
+/* Classes Page Schedule Section children properties ***************************************************************************************************/
+#partner-groups {
+    float: left;
+    width: 100%;
+}
+
+/*******************************************************************************************************************************************************/
 
 /* Classes Page Schedule Section children properties ***************************************************************************************************/
 #schedule {
@@ -280,7 +320,7 @@ section {
 
 #schedule div {
     color: #fafafa;
-    background-color: rgba(0,0,0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 24%;
     height: 300px;
     float: left;
@@ -292,6 +332,7 @@ section {
 #schedule h2 {
     color: #fafafa;
 }
+
 /*******************************************************************************************************************************************************/
 
 
@@ -302,7 +343,16 @@ section {
     text-align: center;
     float: left;
     width: 48%;
-    height: 400px;
+    /* height: 400px; */
+    padding: 10px;
+    height: fit-content;
+}
+
+#section-signupForm input {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(156, 95, 15, 0.06);
+    background-color: rgba(233, 233, 237, 1.0);
 }
 
 #section-signupForm fieldset {
@@ -311,16 +361,29 @@ section {
 }
 
 #section-signupForm div {
-    border: 1px solid #c4a484;
-    width: 100%;
+    /* border: 1px solid #492600; */
+    /* width: 100%; */
+    padding: 5px 0;
 }
 
 #section-signupForm legend {
     font-size: x-large;
 }
 
+select {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(156, 95, 15, 0.06);
+    background-color: rgba(233, 233, 237, 1.0);
+}
+
 .block-label {
-	display: block;
+    display: block;
 }
 
 fieldset legend {
@@ -328,6 +391,7 @@ fieldset legend {
     margin: auto;
     text-align: center;
 }
+
 /*******************************************************************************************************************************************************/
 
 
@@ -336,12 +400,13 @@ fieldset legend {
     text-align: center;
     float: left;
     width: 48%;
-    height: 400px;
+    /* height: 400px; */
 }
 
 #section-contactDetails h2 {
     padding-bottom: 5%;
 }
+
 /*******************************************************************************************************************************************************/
 
 
@@ -349,13 +414,32 @@ fieldset legend {
 #section-newsletter {
     background-color: inherit;
     border: 5px solid #c4a484;
-    text-align: left;
-    height: 100px;
+    text-align: center;
+    /* height: 100px; */
+    height: fit-content;
+}
+
+#section-newsletter input {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(156, 95, 15, 0.06);
+    background-color: rgba(233, 233, 237, 1.0);
+    min-width: 225px;
 }
 
 #section-newsletter legend {
     font-size: x-large;
 }
+
+button[type=submit] {
+    margin-left: 0.75rem;
+    padding: 0.75rem;
+    background-color: #5e361b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
 /*******************************************************************************************************************************************************/
 
 
@@ -368,8 +452,8 @@ fieldset legend {
     width: 100%;
     background-color: #492600;
 
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
 
     text-align: center;
     color: white;
@@ -394,6 +478,7 @@ fieldset legend {
     padding: 15px;
     font-size: x-small;
 }
+
 /********************************************************************************************************************************************************/
 
 
@@ -414,26 +499,27 @@ fieldset legend {
     padding-top: 1%;
     display: inline-block;
 }
-  
+
 .flip-box-inner {
-/* position: relative; */
-width: 414px; 
-height: 100%;
-text-align: center;
-transition: transform 0.8s;
-transform-style: preserve-3d;
+    /* position: relative; */
+    width: 414px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
 .flip-box:hover .flip-box-inner {
-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
-.flip-box-front, .flip-box-back {
-position: absolute;
-width: 414px; 
-height: 100%;
--webkit-backface-visibility: hidden;
-backface-visibility: hidden;
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 414px;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .button-p {
@@ -446,41 +532,33 @@ backface-visibility: hidden;
 }
 
 .flip-box-front {
-background-color: #bbb;
-color: black;
+    background-color: #bbb;
+    color: black;
 }
 
 .flip-box-back {
-background-color: #492600;
-color: white;
-transform: rotateY(180deg);
+    background-color: #492600;
+    color: white;
+    transform: rotateY(180deg);
 }
+
 /********************************************************************************************************************************************************/
 
 
 /* Mobile first queries *********************************************************************************************************************************/
 /* Larger than mobile */
-@media (min-width: 400px) {
-
-}
+@media (min-width: 400px) {}
 
 /* Larger than phablet */
-@media (min-width: 550px) {
-
-}
+@media (min-width: 550px) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) {
-
-}
+@media (min-width: 750px) {}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
-
-}
+@media (min-width: 1000px) {}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) {}
 
-}
 /********************************************************************************************************************************************************/

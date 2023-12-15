@@ -51,38 +51,45 @@
 
                     <div>
                         <label for="name-field">First Name</label>
-                        <input id="name-field" type="text" name="first-name" placeholder="First Name" required>
+                        <input class="form-input" id="name-field" type="text" name="first-name" placeholder="First Name" required>
                         <label for="surname-field">Surname</label>
-                        <input id="surname-field" type="text" name="surname" placeholder="Surname" required>
+                        <input class="form-input" id="surname-field" type="text" name="surname" placeholder="Surname" required>
                     </div>
                     <div>
                         <label for="email-field">Email</label>
-                        <input id="email-field" type="email" name="email" placeholder="Your Email" required>
+                        <input class="form-input" id="email-field" type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div>
                         <label for="number-field">Contact Number</label>
-                        <input id="number-field" type="text" name="number" placeholder="Contact Number">
+                        <input class="form-input" id="number-field" type="text" name="number" placeholder="Contact Number">
                     </div>
 
                     <div>
                         <label for="age-field">Date of Birth</label>
-                        <input id="age-field" type="date" name="date-of-birth" required>
+                        <input class="form-input" id="age-field" type="date" name="date-of-birth" required>
                     </div>
 
-                    <label for="experience-field">Experience</label>
-                    <select name="experience" id="experience">
-                        <option value="none">No musical experience</option>
-                        <option value="beginner">Beginner (LCM/ABRSM Grades 1-2)</option>
-                        <option value="intermediate">Medium (LCM/ABRSM Grades 3-5)</option>
-                        <option value="senior">Experienced (LCM/ABRSM Grades 6-8)</option>
-                        <option value="expert">Professional (LCM/ABRSM Diploma)</option>
-                    </select>
+                    <div>
+                        <label for="experience-field">Experience</label>
+                        <select class="form-input" name="experience-field" id="experience-field">
+                            <option value="none">No musical experience</option>
+                            <option value="beginner">Beginner (LCM/ABRSM Grades 1-2)</option>
+                            <option value="intermediate">Medium (LCM/ABRSM Grades 3-5)</option>
+                            <option value="senior">Experienced (LCM/ABRSM Grades 6-8)</option>
+                            <option value="expert">Professional (LCM/ABRSM Diploma)</option>
+                        </select>
+                    </div>
 
                     <div>
                         <label class="block-label" for="other-field">Any other information (Previous music groups, alternative qualification and titles etc)</label>
-                        <textarea id="other-field" rows="15" cols="100%" name="feedback"></textarea>
+                        <textarea class="form-input" id="other-field" rows="15" cols="100%" name="feedback"></textarea>
                     </div>
                 </fieldset>
+
+                <button class="block-label" type="submit">
+                    <strong>Submit</strong>
+                </button>
+                <input type="reset" value="Reset Form">
             </form>
         </section>
 
@@ -105,7 +112,7 @@
             </div>
         </section>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
         <!-- Email input for optional newsletter -->
         <section id="section-newsletter">
@@ -114,7 +121,10 @@
                 <p>Sign up to our newsletter to hear about special guest musicians and conductors. We also provide information about concerts and public performances.</p>
                 <p>We look forward to hearing from you!</p>
                 <label for="newsletter-field">Email: </label>
-                <input id="newsletter-field" type="email" name="newsletter" placeholder="Your email">
+                <input id="newsletter-field" type="email" name="newsletter" placeholder="Your email" required>
+                <button class="block-label" type="submit">
+                    <strong>Submit</strong>
+                </button>
             </form>
         </section>
 
