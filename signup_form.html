@@ -11,8 +11,6 @@
 
         <!-- Add Bootstrap or other css framework -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"> -->
-        <!-- <link rel="stylesheet" href="assets/css/Skeleton-2.0.4/Skeleton-2.0.4/css/skeleton.css"> -->
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
 
@@ -20,8 +18,8 @@
 
         <!-- header including banner image and navbar -->
         <header>
-            <div class="hero-image">
-                <div class="hero-text">
+            <div class="headerImage">
+                <div class="headerTitle">
                     <h1>
                         <a href="index.html" title="Allegro Symphony Orchestra & Strings" rel="home">Allegro Symphony Orchestra & Strings</a>
                     </h1>
@@ -29,91 +27,90 @@
             </div>
 
             <!-- navbar -->
-            <nav class="navbar">
+            <nav class="navBar">
                 <ul >
-                    <li><a class="active" href="index.html" aria-label="Homepage for the music group">Home</a></li>
+                    <li><a href="index.html" aria-label="Homepage for the music group">Home</a></li>
                     <li><a href="about.html" aria-label="Information about the music group">About</a></li>
                     <li><a href="classes.html" aria-label="Scheduling of different classes and workshops">Classes/Workshops</a></li>
-                    <li><a href="gallery.html" aria-label="Gallery for the orchestra and players">Gallery</a></li>
                     <li class="active"><a href="signup_form.html" aria-label="Signup as new applicatant or teacher to the music group">Signup</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- Section to sign up to play in the orchestra -->
-        <!-- Name, Surname, Email, Number,  -->
-        <!-- Option for player, child player, teacher -->
-        <!-- Box for details about music knowledge -->
-        <section id="section-signupForm">
-            <form action="https://formdump.codeinstitute.net" method="POST">
-                <fieldset>
-                    <legend>Your Details:</legend>
+        <div class="display-row">
+            <!-- Section to sign up to play in the orchestra -->
+            <!-- Name, Surname, Email, Number,  -->
+            <!-- Option for player, child player, teacher -->
+            <!-- Box for details about music knowledge -->
+            <section class="col" id="section-signupForm">
+                <form action="https://formdump.codeinstitute.net" method="POST">
+                    <fieldset>
+                        <legend>Your Details:</legend>
 
-                    <div>
-                        <label for="name-field">First Name</label>
-                        <input class="form-input" id="name-field" type="text" name="first-name" placeholder="First Name" required>
-                        <label for="surname-field">Surname</label>
-                        <input class="form-input" id="surname-field" type="text" name="surname" placeholder="Surname" required>
-                    </div>
-                    <div>
-                        <label for="email-field">Email</label>
-                        <input class="form-input" id="email-field" type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div>
-                        <label for="number-field">Contact Number</label>
-                        <input class="form-input" id="number-field" type="text" name="number" placeholder="Contact Number">
-                    </div>
+                        <div>
+                            <label for="name-field">First Name</label>
+                            <input class="form-input" id="name-field" type="text" name="first-name" placeholder="First Name" required>
+                            <label for="surname-field">Surname</label>
+                            <input class="form-input" id="surname-field" type="text" name="surname" placeholder="Surname" required>
+                        </div>
+                        <div>
+                            <label for="email-field">Email</label>
+                            <input class="form-input" id="email-field" type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div>
+                            <label for="number-field">Contact Number</label>
+                            <input class="form-input" id="number-field" type="text" name="number" placeholder="Contact Number">
+                        </div>
 
-                    <div>
-                        <label for="age-field">Date of Birth</label>
-                        <input class="form-input" id="age-field" type="date" name="date-of-birth" required>
-                    </div>
+                        <div>
+                            <label for="age-field">Date of Birth</label>
+                            <input class="form-input" id="age-field" type="date" name="date-of-birth" required>
+                        </div>
 
-                    <div>
-                        <label for="experience-field">Experience</label>
-                        <select class="form-input" name="experience-field" id="experience-field">
-                            <option value="none">No musical experience</option>
-                            <option value="beginner">Beginner (LCM/ABRSM Grades 1-2)</option>
-                            <option value="intermediate">Medium (LCM/ABRSM Grades 3-5)</option>
-                            <option value="senior">Experienced (LCM/ABRSM Grades 6-8)</option>
-                            <option value="expert">Professional (LCM/ABRSM Diploma)</option>
-                        </select>
-                    </div>
+                        <div>
+                            <label for="experience-field">Experience</label>
+                            <select class="form-input" name="experience-field" id="experience-field">
+                                <option value="none">No musical experience</option>
+                                <option value="beginner">Beginner (LCM/ABRSM Grades 1-2)</option>
+                                <option value="intermediate">Medium (LCM/ABRSM Grades 3-5)</option>
+                                <option value="senior">Experienced (LCM/ABRSM Grades 6-8)</option>
+                                <option value="expert">Professional (LCM/ABRSM Diploma)</option>
+                            </select>
+                        </div>
 
-                    <div>
-                        <label class="block-label" for="other-field">Any other information (Previous music groups, alternative qualification and titles etc)</label>
-                        <textarea class="form-input" id="other-field" rows="15" cols="100%" name="feedback"></textarea>
-                    </div>
-                </fieldset>
+                        <div>
+                            <label class="block-label" for="other-field">Any other information (Previous music groups, alternative qualification and titles etc)</label>
+                            <textarea class="form-input" id="other-field" rows="15" cols="100%" name="feedback"></textarea>
+                        </div>
+                    </fieldset>
 
-                <button class="block-label" type="submit">
-                    <strong>Submit</strong>
-                </button>
-                <input type="reset" value="Reset Form">
-            </form>
-        </section>
+                    <button class="block-label" type="submit">
+                        <strong>Submit</strong>
+                    </button>
+                    <input type="reset" value="Reset Form">
+                </form>
+            </section>
 
-        <!-- Contact details for orchestra -->
-        <section id="section-contactDetails">
-            <h2>Our contact details</h2>
-            <div>
-                <h3>Address:</h3>
-                <p>Allegro Symphony Orchestra & Strings Group</p>
-                <p>Bristol Old Vic</p>
-                <p>King St</p>
-                <p>Bristol</p>
-                <p>BS1 4ED</p>
+            <!-- Contact details for orchestra -->
+            <section class="col" id="section-contactDetails">
+                <h2>Our contact details</h2>
+                <div>
+                    <h3>Address:</h3>
+                    <p>Allegro Symphony Orchestra & Strings Group</p>
+                    <p>Bristol Old Vic</p>
+                    <p>King St</p>
+                    <p>Bristol</p>
+                    <p>BS1 4ED</p>
 
-                <br>
+                    <br>
 
-                <h3>Contact us:</h3>
-                <p>Phone Number: 07#########</p>
-                <a href="https://mail.google.com/" target="_blank" aria-label="link to send us an email">Email at allegrosymphony@gmail.com</a>
-            </div>
-        </section>
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+                    <h3>Contact us:</h3>
+                    <p>Phone Number: 07#########</p>
+                    <a href="https://mail.google.com/" target="_blank" aria-label="link to send us an email">Email at allegrosymphony@gmail.com</a>
+                </div>
+            </section>
+        </div>
+        
         <!-- Email input for optional newsletter -->
         <section id="section-newsletter">
             <form action="https://formdump.codeinstitute.net" method="POST">
@@ -132,7 +129,7 @@
         <footer class="footer">
             <div class="footer-text">
                 <!-- links to social media, open in new tab -->
-                <ul id="social-networks">
+                <ul id="socialNetworks">
                     <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
                     <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>

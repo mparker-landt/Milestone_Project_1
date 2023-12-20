@@ -1,0 +1,309 @@
+
+.sectionLeft {
+    text-align: center;
+    /* height: 365px; */
+    width: 48%;
+    margin-left: 10px;
+}
+
+.sectionLeft img {
+    /* height: 90%; */
+    bottom: 0;
+    float: left;
+    padding-left: 5%;
+}
+
+.sectionLeft div {
+    height: 90%;
+    text-align: left;
+    bottom: 0;
+    float: right;
+    width: 60%;
+    margin-top: 5%;
+}
+
+.sectionRight {
+    text-align: center;
+    /* height: 365px; */
+    width: 48%;
+    margin-left: 10px;
+}
+
+.sectionRight img {
+    /* height: 90%; */
+    bottom: 0;
+    float: right;
+    padding-right: 5%;
+}
+
+.sectionRight div {
+    height: 90%;
+    text-align: right;
+    bottom: 0;
+    float: left;
+    width: 60%;
+    margin-top: 5%;
+}
+
+/* About page Image Box flip actions ********************************************************************************************************************/
+.flipImg {
+    /* height: 100%; */
+    width: 414px;
+    height: 292px;
+}
+
+.flipBox {
+    background-color: transparent;
+    width: 414px;
+    height: 292px;
+    /* border: 1px solid blue; */
+    perspective: 1000px;
+    padding-left: 5%;
+    padding-top: 1%;
+    display: inline-block;
+}
+
+.flipBox-inner {
+    /* position: relative; */
+    width: 414px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipBox:hover .flipBox-inner {
+    transform: rotateY(180deg);
+}
+
+.flipBox-front, .flipBox-back {
+    position: absolute;
+    width: 414px;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.button-p {
+    color: white;
+    text-decoration: underline;
+}
+
+.flipBox-back p {
+    padding-top: 5%;
+}
+
+.flipBox-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flipBox-back {
+    background-color: #492600;
+    color: white;
+    transform: rotateY(180deg);
+}
+/********************************************************************************************************************************************************/
+
+
+/* About Page Schedule Section children properties ***************************************************************************************************/
+#partnerGroups {
+    width: 100%;
+}
+/*******************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#section-third {
+    background-color: #c4a484;
+    /* text-align: center; */
+    margin: 10px;
+    /* height: 500px;  */
+    height: 365px;
+}
+
+#section-third div {
+    color: black;
+    /* background-color: rgba(0,0,0, 0.6); */
+    width: 32%;
+    height: 300px;
+    float: left;
+    padding: 30px 0 0 10px;
+    text-align: center;
+    margin: 2px;
+    overflow: scroll;
+    scrollbar-color: #492600 white;
+    scrollbar-width: auto;
+}
+
+
+/* Classes Page Schedule Section children properties ***************************************************************************************************/
+#schedule {
+    background-image: url("../images/orchestra.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+#schedule div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 24%;
+    height: 300px;
+    float: left;
+    padding: 30px 0 0 10px;
+    text-align: center;
+    margin: 2px;
+}
+
+#schedule h2 {
+    color: #fafafa;
+}
+/*******************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.col {
+    flex: 1;
+}
+
+
+/* Contact Page Signup Section properties ****************************************************************************************************************************************/
+#section-signupForm {
+    background-color: inherit;
+    border: 5px solid #c4a484;
+    text-align: center;
+}
+
+#section-signupForm input {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(156, 95, 15, 0.06);
+    background-color: rgba(233, 233, 237, 1.0);
+}
+
+#section-signupForm fieldset {
+    text-align: center;
+    display: block;
+}
+
+#section-signupForm div {
+    /* border: 1px solid #492600; */
+    /* width: 100%; */
+    padding: 5px 0;
+}
+
+#section-signupForm legend {
+    font-size: x-large;
+}
+
+select {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(156, 95, 15, 0.06);
+    background-color: rgba(233, 233, 237, 1.0);
+}
+
+.block-label {
+    display: block;
+}
+
+fieldset legend {
+    display: table;
+    margin: auto;
+    text-align: center;
+}
+/*******************************************************************************************************************************************************/
+
+
+/* Contact Page Contact Details Section properties ****************************************************************************************************/
+#section-contactDetails {
+    text-align: center;
+}
+
+#section-contactDetails h2 {
+    padding-bottom: 5%;
+}
+/*******************************************************************************************************************************************************/
+
+
+/* Contact Page Newsletter Section properties ***********************************************************************************************************/
+#section-newsletter {
+    background-color: inherit;
+    border: 5px solid #c4a484;
+    text-align: center;
+    /* height: 100px; */
+    height: fit-content;
+}
+
+#section-newsletter input {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(156, 95, 15, 0.06);
+    background-color: rgba(233, 233, 237, 1.0);
+    min-width: 225px;
+}
+
+#section-newsletter legend {
+    font-size: x-large;
+}
+
+button[type=submit] {
+    margin-left: 0.75rem;
+    padding: 0.75rem;
+    background-color: #5e361b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+/*******************************************************************************************************************************************************/
