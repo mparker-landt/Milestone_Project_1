@@ -162,42 +162,49 @@ header {
 /* General sections properties **************************************************************************************************************************/
 
 
-.display-row {
+.displayRow {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
 }
 /********************************************************************************************************************************************************/
 
 
 /* Home Page About Section and its children properties **************************************************************************************************/
-#home-about {
+#homeAbout {
     height: fit-content;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
 }
 
-#home-about h2 {
+#homeAbout h2 {
     text-align: center;
-    padding: 1rem;
-    flex-direction: column;
+    padding: 2rem;
+    text-decoration: underline;
 }
 
-#home-about img {
+#homeAbout img {
+    /* border: 2px solid #402e32; */
     height: 450px;
     padding: 5px;
 }
 
 .text-center {
-    width: 60%;
+    padding: 3rem;
+    /* border: 2px solid #402e32; */
+}
+
+.text-center p {
+    padding: 1rem;
 }
 /********************************************************************************************************************************************************/
 
 
 /* Home Page Signup Section properties ******************************************************************************************************************/
-#home-page-links {
+#homeClickthrough {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -207,7 +214,7 @@ header {
     text-align: center;
 }
 
-#classes-box {
+#homeClasses {
     height: 650px;
     width: 100%;
 
@@ -226,12 +233,12 @@ header {
     align-items: center;
 }
 
-#classes-box a {
+#homeClasses a {
     border: 3px solid white;
     padding: 8px;
 }
 
-#signup-box {
+#homeSignup {
     height: 650px;
     width: 100%;
 
@@ -250,7 +257,7 @@ header {
     align-items: center;
 }
 
-#signup-box a {
+#homeSignup a {
     border: 3px solid white;
     padding: 8px;
 }
@@ -258,7 +265,7 @@ header {
 
 
 /* Home Page Contact Section children properties *******************************************************************************************************/
-#home-contact {
+#homeContact {
     height: fit-content;
     width: 100%;
     display: flex;
@@ -266,14 +273,30 @@ header {
     flex-wrap: nowrap;
 }
 
+#homeContact h2 {
+    padding: 2rem;
+    text-decoration: underline;
+}
+
 #address {
+    /* border: 2px solid #402e32; */
     height: 400px;
-    width: auto;
+    width: 40%;
+}
+
+#address h3 {
+    padding: 2%;
+}
+
+#address p {
+    padding: 1%;
 }
 
 #map {
+    /* border: 2px solid #402e32; */
     height: 400px;
-    width: 60%;
+    width: 58%;
+    padding: 5px;
 }
 /*******************************************************************************************************************************************************/
 
@@ -318,28 +341,52 @@ header {
 
 /* All Pages Mobile first queries ***********************************************************************************************************************/
 /* Larger than mobile */
-@media (min-width: 400px) {
+@media only screen and (min-width: 400px) {
+    #homeClickthrough {
+        flex-direction: column;
+    }
 
+    .displayRow {
+        flex-direction: column;
+    }
 }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
+@media only screen and (min-width: 550px) {
+    #homeClickthrough {
+        flex-direction: column;
+    }
 
+    .displayRow {
+        flex-direction: column;
+    }
 }
 
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media only screen and (min-width: 750px) {
+    #homeClickthrough {
+        flex-direction: row;
+    }
 
+    .displayRow {
+        flex-direction: column;
+    }
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
 
 }
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {
-    
+@media only screen and (min-width: 1200px) {
+    #homeClickthrough {
+        flex-direction: row;
+    }
+
+    .displayRow {
+        flex-direction: row;
+    }
 }
 /********************************************************************************************************************************************************/
 
