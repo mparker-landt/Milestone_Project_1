@@ -25,24 +25,25 @@
                     </h1>
                 </div>
             </div>
-
-            <!-- navbar -->
-            <nav class="navBar">
-                <ul >
-                    <li><a href="index.html" aria-label="Homepage for the music group">Home</a></li>
-                    <li><a href="about.html" aria-label="Information about the music group">About</a></li>
-                    <li><a href="classes.html" aria-label="Scheduling of different classes and workshops">Classes/Workshops</a></li>
-                    <li class="active"><a href="signup_form.html" aria-label="Signup as new applicatant or teacher to the music group">Signup</a></li>
-                </ul>
-            </nav>
         </header>
+
+        <!-- navbar -->
+        <nav id="navBar">
+            <a class="burgerIcon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <ul id="menu">
+                <li><a href="index.html"  aria-label="Homepage for the music group">Home</a></li>
+                <li><a href="about.html" aria-label="Information about the music group">About</a></li>
+                <li><a href="classes.html"  aria-label="Scheduling of different classes and workshops">Classes/Workshops</a></li>
+                <li><a class="active" href="signup_form.html"  aria-label="Signup as new applicatant or teacher to the music group">Signup</a></li>
+            </ul>
+        </nav>
 
         <div class="displayRow">
             <!-- Section to sign up to play in the orchestra -->
             <!-- Name, Surname, Email, Number,  -->
             <!-- Option for player, child player, teacher -->
             <!-- Box for details about music knowledge -->
-            <section class="col" id="section-signupForm">
+            <section class="col" id="contactSignup">
                 <form action="https://formdump.codeinstitute.net" method="POST">
                     <fieldset>
                         <legend>Your Details:</legend>
@@ -92,7 +93,7 @@
             </section>
 
             <!-- Contact details for orchestra -->
-            <section class="col" id="section-contactDetails">
+            <section class="col" id="contactAddress">
                 <h2>Our contact details</h2>
                 <div>
                     <h3>Address:</h3>
@@ -112,7 +113,7 @@
         </div>
         
         <!-- Email input for optional newsletter -->
-        <section id="section-newsletter">
+        <section id="ContactNewsletter">
             <form action="https://formdump.codeinstitute.net" method="POST">
                 <legend>Newsletter</legend>
                 <p>Sign up to our newsletter to hear about special guest musicians and conductors. We also provide information about concerts and public performances.</p>
@@ -127,7 +128,7 @@
 
         <!-- footer including social media links, copyright and back to top nav -->
         <footer class="footer">
-            <div class="footer-text">
+            <div class="footerText">
                 <!-- links to social media, open in new tab -->
                 <ul id="socialNetworks">
                     <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -150,5 +151,15 @@
             </div>
         </footer>
         
+        <script>
+            function myFunction() {
+                var x = document.getElementById("menu");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
     </body>
 </html>
