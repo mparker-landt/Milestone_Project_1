@@ -165,7 +165,7 @@ header {
 }
 
 .textBody {
-    padding: 3rem;
+    padding: 1rem;
     /* border: 2px solid #402e32; */
 }
 
@@ -506,7 +506,7 @@ fieldset legend {
     border-radius: 10px;
     box-shadow: 0 0 15px 4px rgba(156, 95, 15, 0.06);
     background-color: rgba(233, 233, 237, 1.0);
-    min-width: 225px;
+    min-width: 320px;
 }
 
 #ContactNewsletter legend {
@@ -661,6 +661,8 @@ button[type=submit] {
         /* border: 2px solid #402e32; */
         /* height: 400px; */
         width: 98%;
+        height: auto;
+        padding-bottom: 15px;
     }
 
     #map {
@@ -679,6 +681,10 @@ button[type=submit] {
         width: 100%
     }
 
+    .classesScheduleBox {
+        border: 1px solid white;
+    }
+
     #contactSignup {
         width: 95%;
         margin: 20px 5%;
@@ -690,16 +696,28 @@ button[type=submit] {
 
     #contactSignup fieldset {
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
 
     #contactSignup div label {
         display: block;
     }
 
+    #contactSignup div input {
+        width: 90%;
+    }
+
+    #contactSignup div select {
+        width: 90%;
+    }
+
     textarea {
-        width: 100%;
+        width: 90%;
         padding: 0;
+    }
+
+    .textBodyLeft, .textBodyRight {
+        text-align: center;
     }
 
     #contactAddress {
