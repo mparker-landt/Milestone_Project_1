@@ -9,7 +9,7 @@
 
         <title>Allegro Symphony Orchestra</title>
 
-        <!-- Add Bootstrap or other css framework -->
+        <!-- CSS and other external links -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
@@ -27,7 +27,7 @@
             </div>
         </header>
 
-        <!-- navbar -->
+        <!-- navbar, collapses to burger icon on smaller screens -->
         <nav id="navBar">
             <a class="burgerIcon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             <ul id="menu">
@@ -42,34 +42,33 @@
         <section id="homeAbout">
             <h2> About Allegro Symphony Orchestra</h2>
             <div class="displayRow">
-                <!-- <div> -->
                 <img src="assets/images/orchestra-break.jpg" alt="orchestra players chatting during break">
-                <!-- </div> -->
 
                 <div class="textBody">
-                    <p>Established in 1912, the Allegro Symphony Orchesta started out as a simple string quarter performing in the backroom of a local cafe.</p>
-                    <p>What quickly grew into a full orchestra has kept its tradition of bringing music and joy to the next generation.</p>
-                    <p>As well as carrying on the string quartets, the Allego group also offers individual lessons. We also collaborate with other instrument groups to join as a full orchestra fortnightly.</p>
-                    <p>Important to us is the teaching and carrying on of music tradition too, individual lessons and regular orchestras are offered to juniors who have the opportunity to learn musical skills and work as a group to create beautiful sounds.</p>
+                    <p>Greetings and warmest welcome to our esteemed community of music players, where aspirations meet melodies.</p>
+                    <p>Whether a totally new student with no musical knowledge or an experience player looking to continue your skills we offer lessons to all.</p>
+                    <p>If you are interested in learning string instruments and having the opportunity to perform with others, we invite you to join our community.</p>
+                    <p>We look forward to seeing you.</p>
                 </div>
             </div>
 
             <!-- <img src="assets/images/orchestra-starters.jpg" alt="flute players in orchestra"> -->
         </section>
 
+        <!-- section clickthrough, image links to other pages on the website -->
         <div id="homeClickthrough">
             <!-- section classes, redirects to webpage with information about different classes and times -->
             <div id="homeClasses">
-                <h2><a href="classes.html">Classes & Workshops</a></h2>
+                <h2><a href="classes.html" aria-label="Link to Classes & Workshops Page">Classes & Workshops</a></h2>
             </div>
 
             <!-- section signup, redirects to webpage with signups for new students and teachers -->
             <div id="homeSignup">
-                <h2><a href="signup_form.html">Signup & Contact</a></h2>
+                <h2><a href="signup_form.html" aria-label="Link to Signup Page">Signup & Contact</a></h2>
             </div>
         </div>
 
-        <!-- section map, contains address to location and embedded map for easy visual of location -->
+        <!-- section contact, contains address to location and embedded map for easy visual of location -->
         <section id="homeContact">
             <h2>Get in touch</h2>
             <div class="displayRow">
@@ -84,20 +83,11 @@
                     <br>
     
                     <h3>Contact us:</h3>
-                    <p>Phone Number: 07#########</p>
-                    <a href="https://mail.google.com/" target="_blank" aria-label="link to send us an email">Email at allegrosymphony@gmail.com</a><br>
+                    <p>Phone Number: 01443 123001</p>
+                    <a href="https://mail.google.com/" target="_blank" aria-label="link to send us an email">Email: info@allegrosymphony.com</a><br>
                 </div>
     
-                <iframe id="map" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Bristol+Old+Vic+Theatre+School,+Downside+Road,+Clifton,+Bristol,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                <!-- <iframe id="map" src="https://bit.ly/2QVfkiy" height="300" width="100%"></iframe> -->
-                <!-- <div style="max-width:100%; overflow:hidden; color:red;width:500px; height:500px;">
-                    <div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;">
-                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Bristol+Old+Vic+Theatre+School,+Downside+Road,+Clifton,+Bristol,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                    </div>
-                    <a class="our-googlemap-code" href="https://kbj9qpmy.com/bp" id="get-map-data">Internet Provider</a>
-                    <style>#my-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style>
-                </div> -->
-            </div>
+                <iframe id="map" width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=17&center=51.4520%2C-2.5943&key=AIzaSyDOvRemYb4mXgLWiJe-MVTyju1aBvgNaJ4" aria-label="Map showing location of Old Vic location"></iframe>         
         </section>
 
         <!-- footer including social media links, copyright and back to top nav -->
@@ -125,6 +115,7 @@
             </div>
         </footer>
         
+        <!-- javascript code to open and close nav burger icon -->
         <script>
             function myFunction() {
                 var x = document.getElementById("menu");

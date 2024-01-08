@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
 
 /* Full page general properties *************************************************************************************************************************/
@@ -45,6 +45,14 @@ section {
     margin: 10px;
     height: fit-content;
 }
+
+input, label {
+    /* display: block; */
+}
+
+legend {
+    padding: 10px;
+}
 /********************************************************************************************************************************************************/
 
 
@@ -80,7 +88,7 @@ header {
     text-align: center;
     color: white;
     font-size: xx-large;
-    font-family: 'Imperial Script', cursive;
+    font-family: 'Tangerine', cursive;
 
     position: absolute;
     transform: translate(-50%, -50%);
@@ -200,6 +208,15 @@ header {
 
 .textBody p {
     padding: 1rem;
+    font-size: large;
+}
+
+.textBodyLeft {
+    text-align: left;
+}
+
+.textBodyRight {
+    text-align: right;
 }
 /********************************************************************************************************************************************************/
 
@@ -237,6 +254,7 @@ header {
 #homeClasses a {
     border: 3px solid white;
     padding: 8px;
+    border-radius: 10px;
 }
 
 #homeSignup {
@@ -245,7 +263,7 @@ header {
 
     background-color: #492600;
     color: white;
-    background-image: url("../images/violin.jpg");
+    background-image: url("../images/piano.jpg");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -261,6 +279,7 @@ header {
 #homeSignup a {
     border: 3px solid white;
     padding: 8px;
+    border-radius: 10px;
 }
 /********************************************************************************************************************************************************/
 
@@ -268,7 +287,7 @@ header {
 /* Home Page Contact Section children properties *******************************************************************************************************/
 #homeContact {
     height: fit-content;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -308,6 +327,7 @@ header {
     /* height: 365px; */
     width: 48%;
     margin-left: 10px;
+    padding-bottom: 10px;
 }
 
 .sectionLeft img {
@@ -331,6 +351,7 @@ header {
     /* height: 365px; */
     width: 48%;
     margin-left: 10px;
+    padding-bottom: 10px;
 }
 
 .sectionRight img {
@@ -352,32 +373,36 @@ header {
 
 
 /* About Page Schedule Section children properties ***************************************************************************************************/
-#partnerGroups {
-    width: 100%;
+#aboutPartnerGroups {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    /* justify-content: space-around; */
+    padding-bottom: 10px;
 }
 /*******************************************************************************************************************************************************/
 
 
 /* About Page Image Box flip actions ********************************************************************************************************************/
 .flipImg {
-    /* height: 100%; */
-    width: 414px;
-    height: 292px;
+    height: 100%;
+    background-size: cover;
 }
 
 .flipBox {
     background-color: transparent;
-    width: 414px;
-    height: 292px;
+    width: 100%;
+    height: 100%;
     perspective: 1000px;
-    padding-left: 5%;
-    padding-top: 1%;
-    display: inline-block;
+    /* padding-left: 5%; */
+    /* padding-top: 1%; */
+    /* display: inline-block; */
 }
 
 .flipBoxInner {
     /* position: relative; */
-    width: 414px;
+    width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
@@ -390,15 +415,43 @@ header {
 
 .flipBoxFront, .flipBoxBack {
     position: absolute;
-    width: 414px;
+    width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flipBoxFront h2 {
+    color: white;
+}
+
+#flipBoxBrass{
+    background-image: url("../images/orchestra-trumpets.jpg");
+    background-size: cover;
+}
+
+#flipBoxWood{
+    background-image: url("../images/orchestra-flutes.jpg");
+    background-size: cover;
+}
+
+#flipBoxChoir{
+    background-image: url("../images/orchestra-choir.jpg");
+    background-size: cover;
 }
 
 .buttonLink {
-    color: white;
-    text-decoration: underline;
+    color: white;    
+}
+
+.buttonLink a {
+    border: 3px solid white;
+    padding: 8px;
+    border-radius: 10px;
 }
 
 .flipBoxBack p {
@@ -442,41 +495,66 @@ header {
 }
 
 
+.classesAbout {
+    height: 300px;
+    overflow: scroll;
+    scrollbar-color: #492600 white;
+    scrollbar-width: auto;
+}
+
+
 /* Classes Page Schedule Section children properties ***************************************************************************************************/
-#schedule {
+#classesSchedule {
     background-image: url("../images/orchestra.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* width: 100%; */
-    overflow: hidden;
-}
 
-#schedule div {
-    color: #fafafa;
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 24%;
-    height: 300px;
-    float: left;
-    padding: 30px 0 0 10px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin: 2px;
+    margin: 5px;
 }
 
-#schedule h2 {
+#classesSchedule > div {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.classesScheduleContainer {
     color: #fafafa;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    text-align: center;
+}
+
+#classesSchedule h2 {
+    color: #fafafa;
+}
+
+.classesScheduleBox {
+    /* border: 1px solid blue; */
+    height: 250px;
+    /* background-color: aquamarine; */
+    width: 32%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 2px;
 }
 /*******************************************************************************************************************************************************/
 
-.col {
-    flex: 1;
-}
+
 
 /* Contact Page Signup Section properties ****************************************************************************************************************************************/
 #contactSignup {
     background-color: inherit;
     border: 5px solid #c4a484;
     text-align: center;
+    flex: 1;
+    width: 48%;
+    /* display: block; */
 }
 
 #contactSignup input {
@@ -488,7 +566,7 @@ header {
 
 #contactSignup fieldset {
     text-align: center;
-    display: block;
+    /* display: block; */
 }
 
 #contactSignup div {
@@ -503,7 +581,7 @@ header {
 
 select {
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px;;
 }
 
 textarea {
@@ -517,6 +595,13 @@ textarea {
     display: block;
 }
 
+.formButton {
+    padding:10px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+}
+
 fieldset legend {
     display: table;
     margin: auto;
@@ -528,6 +613,10 @@ fieldset legend {
 /* Contact Page Contact Details Section properties ****************************************************************************************************/
 #contactAddress {
     text-align: center;
+    flex: 1;
+    align-self: stretch;
+    width: 48%;
+    height: auto;
 }
 
 #contactAddress h2 {
@@ -706,3 +795,44 @@ button[type=submit] {
 /********************************************************************************************************************************************************/
 
 
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #c4a484;
+    margin: 5px;
+    padding: 10px 2px;
+}
+
+.flexColumn > h2 {
+    padding: 15px;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexBox {
+    /* border: 1px solid blue; */
+    /* border: 1px solid #492600; */
+    background-color: #c4a484;
+    width: 32%;
+}
+
+.flexBox > p {
+    padding: 5px 0;
+}
+
+.container {
+    height: 350px;
+    overflow: scroll;
+    scrollbar-color: #492600 white;
+    scrollbar-width: auto;
+}

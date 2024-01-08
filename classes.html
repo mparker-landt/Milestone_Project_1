@@ -9,7 +9,7 @@
 
         <title>Allegro Symphony Orchestra | Classes</title>
 
-        <!-- Add Bootstrap or other css framework -->
+        <!-- CSS and other external links -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
@@ -27,7 +27,7 @@
             </div>
         </header>
 
-        <!-- navbar -->
+        <!-- navbar, collapses to burger icon on smaller screens -->
         <nav id="navBar">
             <a class="burgerIcon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             <ul id="menu">
@@ -38,71 +38,82 @@
             </ul>
         </nav>
 
-        <!-- Section that contains groups split into thirds with titles and information about the different classes -->
-        <section id="sectionThird"> 
-            <!-- Title and Information about the whole orchestras -->
-            <div>
-                <h3>Orchestra and Junior Orchestra</h3>
-                <p>Our orchestra is our defining feature. Once a week players are greatly encouraged to meet up and play with other instrument groups. <br>
-                    During this time musical and key skills are honed and developed. <br>
-                    We practice regurlaly, this music then comes together for periodic concerts and shows, about once a quarter. Performing in public is necessary for any musiciain and players get this great opportunity to be noticed as well as provide for the public. 
-                </p>
-                <p>Junior players should also play with their age group. Working together is a core skill for any player and it is extremely likely during their musical liftetime players will have to play in a group and learn how the different groups and instruments work together.
-                    This is also a great time to learn how to keep time and be directed by a conductor who will teach the students to work with each other and how by coming together different people and instruments can create something much greater than any individual sound.
-                    Juniors also play shows and concerts as a starter to our main orchestra where appropiate.
-                </p>
-            </div>
+        <!-- section that contains groups split into thirds with titles and information about the different classes -->
+        <div class="flexColumn">
+            <h2>Our Classes and Workshops</h2>
 
-            <!-- Title and Information about the String Quartet -->
-            <div>
-                <h3>String Quartets</h3>
-                <p>Allegro Symphony Strings Group originally starter out as a Strings Quarter when 4 new musiciains met up to play together and started performing on the street for the public soon after,
-                    As the group grew the 4 founders grew into a full orchestra by collaborating with others and started offering private lessons to help other players improve their skills.
-                    However they still played together once a week and we have kept this tradition alive.
-                    Once a week a quartet of two violins, a viola and a cello will meet up to train and perfect.
-                    This is expected to be by themselves, however a conductor or teacher will often go to offer advice and help where they can.
-                    The quartets will sometimes play in concerts or shows depending on demand and scheduling.
-                </p>
+            <div class="flexRow">
+                <!-- title and information about the whole orchestras -->
+                <div class="flexBox container">
+                    <h3>Orchestra and Junior Orchestra</h3>
+                    <p>Our orchestra is our defining feature. Once a week, players are greatly encouraged to meet up and play with our other sister instrument groups, Brass, Woodwind and Choir.</p>
+                    <p>During this time musical and key skills are honed and developed.</p>
+                    <p>We practice regularly as this music then comes together for periodic concerts and shows, every half year. Performing in public is necessary for any musician and players get this great opportunity to be noticed as well as provide for the public.</p>
+                        
+                    <p>Junior players are also offered the opportunity to perform with their age group. Working together is a core skill for any player and it is extremely likely during their musical lifetime players will have to play in a group and learn how the different groups and instruments work together.</p>
+                    <p>This is also a great time to learn how to keep time and be directed by a conductor who will teach the students to work with each other and how by coming together different people and instruments can create something much greater than any individual sound.</p>
+                    <p>Juniors also play shows and concerts as a starter to our main orchestra where appropriate.</p>
+                        
+                    <p>Although most usually performed in Bristol and the South West Allegro Symphony Orchestra often have the opportunity to perform not only in other parts of the UK but also abroad in Europe with different nationalities and environments.</p>
+                </div>
+    
+                <!-- title and information about the string quartet -->
+                <div class="flexBox container">
+                    <h3>String Quartets</h3>
+                    <p>Allegro Symphony Strings Group originally starter out as a Strings Quarter when 4 new musicians met up to play together and started performing on the street for the public soon after,</p>
+                    <p>As the group grew the 4 founders grew into a full orchestra by collaborating with others and started offering private lessons to help other players improve their skills.</p>
+                    <p>However, they still played together once a week and we have kept this tradition alive.</p>
+                    <p>Once a week a quartet of two Violins, a Viola and a Cello will meet up to train and perfect.</p>
+                    <p>This is expected to be by themselves, however a conductor or teacher will often go to offer advice and help where they can.</p>
+                    <p>The quartets will sometimes play in concerts or shows depending on demand and scheduling.</p>
+                        
+                    <p>Despite there being no official Junior Quartet, we have no age limits and have had a mix of ages play together and several juniors play together depending on the organiser.</p> 
+                    <p>This is greatly encouraged, and help provided where it can.</p>
+                </div>
+    
+                <!-- information about personal lessons -->
+                <div class="flexBox container">
+                    <h3>Personal Lessons</h3>
+                    <p>Every player needs to develop their musical skills. Learning never stops at any knowledge level or age.</p>
+                    <p>From our most initial of beginners to the Section Leads, all must regularly practice and receive help and positive criticism from an external listener who can point out areas to improve in.</p>
+                    <p>Players and teachers are matched up in with the same instruments to offer the most expert of advice, each teacher is expected to be able to accompany on the piano too.</p>
+                    <p>This will develop time keeping skills and other instrument collaboration in new players and offer a stable accompaniment to professional players.</p>
+                    <p>Personal lessons are offered at least once a week at a time and day that best suits the student, but students can privately communicate with their mentors to do more if possible. </p>
+                    <p>Teachers and mentors are vetted for experience before beginning lessons, most of our teachers are the most experience players in our Orchestra and community who can help new players through the musical journey that they themselves have experienced.</p>
+                </div>
             </div>
+        </div>
 
-            <!-- Information about Personal Lessons -->
+        <!-- section that contain visual boxes with location and times for the different types of classes/workshops -->
+        <section id="classesSchedule">
             <div>
-                <h3>Personal Lessons</h3>
-                <p>Every player needs to develop their musical skills. Learning nevers stops at any knowledege level or age.
-                    From our most inital of beginners to the Section Leads, all must regurlarly practice and receive help and postivie critisim from an external listener who can point out areas to improve in.
-                    Players and teachers are matched up in with the same instruments to offer the most expert of advice, each player is expected to be able to accompany on the piano too.
-                    This will develop time keeping skills and other instrument collaboration in new players and offer a stable accompiament to professional players.
-                    Personal lessons are offered at least once a week but students can privately communnicate with their mentors to do more if possible. 
-                </p>
-            </div>
-        </section>
-
-        <!-- Section that contain visual boxes with location and times for the different types of classes/workshops -->
-        <section id="schedule">
-            <h2>Scheduling</h2>
-            <div>
-                <h3>Personal Lessons</h3>
-                <h4>Any day</h4>
-                <h4>Students House</h4>
-                <h4>Pre-arranged Time</h4>
-            </div>
-            <div>
-                <h3>String Quartet</h3>
-                <h4>Wednesday</h4>
-                <h4>Old Vic</h4>
-                <h4>19:30 - 21:00</h4>
-            </div>
-            <div>
-                <h3>Orchestra</h3>
-                <h4>Friday</h4>
-                <h4>Old Vic</h4>
-                <h4>18:30 - 21:00</h4>
-            </div>
-            <div>
-                <h3>Junior Orchestra</h3>
-                <h4>Saturday</h4>
-                <h4>Clifton High School</h4>
-                <h4>10:00 - 12:00</h4>
+                <h2>Scheduling</h2>
+                <div class="classesScheduleContainer flexRow"> 
+                    <div class="classesScheduleBox">
+                        <h3>Personal Lessons</h3>
+                        <h4>Any day</h4>
+                        <h4>Students House</h4>
+                        <h4>Pre-arranged Time</h4>
+                    </div>
+                    <div class="classesScheduleBox">
+                        <h3>String Quartet</h3>
+                        <h4>Wednesday</h4>
+                        <h4>Old Vic</h4>
+                        <h4>19:30 - 21:00</h4>
+                    </div>
+                    <div class="classesScheduleBox">
+                        <h3>Orchestra</h3>
+                        <h4>Friday</h4>
+                        <h4>Old Vic</h4>
+                        <h4>18:30 - 21:00</h4>
+                    </div>
+                    <div class="classesScheduleBox">
+                        <h3>Junior Orchestra</h3>
+                        <h4>Saturday</h4>
+                        <h4>Clifton High School</h4>
+                        <h4>10:00 - 12:00</h4>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -131,6 +142,7 @@
             </div>
         </footer>
 
+        <!-- javascript code to open and close nav burger icon -->
         <script>
             function myFunction() {
                 var x = document.getElementById("menu");

@@ -9,7 +9,7 @@
 
         <title>Allegro Symphony Orchestra | Signup</title>
 
-        <!-- Add Bootstrap or other css framework -->
+        <!-- CSS and other external links -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
@@ -27,7 +27,7 @@
             </div>
         </header>
 
-        <!-- navbar -->
+        <!-- navbar, collapses to burger icon on smaller screens -->
         <nav id="navBar">
             <a class="burgerIcon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             <ul id="menu">
@@ -38,39 +38,45 @@
             </ul>
         </nav>
 
+        <section>
+            <h2>Signup</h2>
+            <p>Join our esteemed music academy and exhilarating orchestra by filling out the signup form.</p>
+            <p>Whether you're a budding musician or an experienced instrumentalist,</p>
+            <p>our comprehensive lesson program offers tailored instruction for all skill levels.</p>
+        </section>
+
         <div class="displayRow">
-            <!-- Section to sign up to play in the orchestra -->
-            <!-- Name, Surname, Email, Number,  -->
-            <!-- Option for player, child player, teacher -->
-            <!-- Box for details about music knowledge -->
-            <section class="col" id="contactSignup">
+            <!-- section to sign up to play in the orchestra -->
+            <!-- name, surname, email, number -->
+            <!-- box for details about music knowledge -->
+            <section id="contactSignup">
                 <form action="https://formdump.codeinstitute.net" method="POST">
                     <fieldset>
                         <legend>Your Details:</legend>
 
                         <div>
-                            <label for="name-field">First Name</label>
-                            <input class="form-input" id="name-field" type="text" name="first-name" placeholder="First Name" required>
-                            <label for="surname-field">Surname</label>
-                            <input class="form-input" id="surname-field" type="text" name="surname" placeholder="Surname" required>
+                            <label for="nameField">First Name</label>
+                            <input class="form-input" id="nameField" type="text" name="nameField" placeholder="First Name" required>
+                            <label for="surnameField">Surname</label>
+                            <input class="form-input" id="surnameField" type="text" name="surnameField" placeholder="Surname" required>
                         </div>
                         <div>
-                            <label for="email-field">Email</label>
-                            <input class="form-input" id="email-field" type="email" name="email" placeholder="Your Email" required>
+                            <label for="emailField">Email</label>
+                            <input class="form-input" id="emailField" type="email" name="emailField" placeholder="Your Email" required>
                         </div>
                         <div>
-                            <label for="number-field">Contact Number</label>
-                            <input class="form-input" id="number-field" type="text" name="number" placeholder="Contact Number">
-                        </div>
-
-                        <div>
-                            <label for="age-field">Date of Birth</label>
-                            <input class="form-input" id="age-field" type="date" name="date-of-birth" required>
+                            <label for="numberField">Contact Number</label>
+                            <input class="form-input" id="numberField" type="text" name="numberField" placeholder="Contact Number">
                         </div>
 
                         <div>
-                            <label for="experience-field">Experience</label>
-                            <select class="form-input" name="experience-field" id="experience-field">
+                            <label for="ageField">Date of Birth</label>
+                            <input class="form-input" id="ageField" type="date" name="ageField" required>
+                        </div>
+
+                        <div>
+                            <label for="experienceField">Experience</label>
+                            <select class="form-input" name="experienceField" id="experienceField">
                                 <option value="none">No musical experience</option>
                                 <option value="beginner">Beginner (LCM/ABRSM Grades 1-2)</option>
                                 <option value="intermediate">Medium (LCM/ABRSM Grades 3-5)</option>
@@ -80,20 +86,22 @@
                         </div>
 
                         <div>
-                            <label class="block-label" for="other-field">Any other information (Previous music groups, alternative qualification and titles etc)</label>
-                            <textarea class="form-input" id="other-field" rows="15" cols="100%" name="feedback"></textarea>
+                            <label class="block-label" for="otherField">Any other information (Previous music groups, alternative qualification and titles etc)</label>
+                            <textarea class="form-input" id="otherField" rows="15" cols="100%" name="otherField"></textarea>
                         </div>
                     </fieldset>
 
-                    <button class="block-label" type="submit">
-                        <strong>Submit</strong>
-                    </button>
-                    <input type="reset" value="Reset Form">
+                    <div class="formButton">
+                        <button type="submit">
+                            <strong>Submit</strong>
+                        </button>
+                        <input type="reset" value="Reset Form">
+                    </div>
                 </form>
             </section>
 
-            <!-- Contact details for orchestra -->
-            <section class="col" id="contactAddress">
+            <!-- contact details for orchestra -->
+            <section id="contactAddress">
                 <h2>Our contact details</h2>
                 <div>
                     <h3>Address:</h3>
@@ -106,13 +114,13 @@
                     <br>
 
                     <h3>Contact us:</h3>
-                    <p>Phone Number: 07#########</p>
-                    <a href="https://mail.google.com/" target="_blank" aria-label="link to send us an email">Email at allegrosymphony@gmail.com</a>
+                    <p>Phone Number: 01443 123001</p>
+                    <a href="https://mail.google.com/" target="_blank" aria-label="link to send us an email">Email: info@allegrosymphony.com</a>
                 </div>
             </section>
         </div>
         
-        <!-- Email input for optional newsletter -->
+        <!-- email input for optional newsletter -->
         <section id="ContactNewsletter">
             <form action="https://formdump.codeinstitute.net" method="POST">
                 <legend>Newsletter</legend>
@@ -120,9 +128,12 @@
                 <p>We look forward to hearing from you!</p>
                 <label for="newsletter-field">Email: </label>
                 <input id="newsletter-field" type="email" name="newsletter" placeholder="Your email" required>
-                <button class="block-label" type="submit">
-                    <strong>Submit</strong>
-                </button>
+                
+                <div class="formButton">
+                    <button type="submit">
+                        <strong>Submit</strong>
+                    </button>
+                </div>
             </form>
         </section>
 
@@ -151,6 +162,7 @@
             </div>
         </footer>
         
+        <!-- javascript code to open and close nav burger icon -->
         <script>
             function myFunction() {
                 var x = document.getElementById("menu");
