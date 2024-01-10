@@ -198,10 +198,23 @@ The local files were opened and used in a Firefox or Chrome Web browser to view 
 Browser Developer Tools were used to debug the code and explore mobile screens.
 
 ### HTML Validator Testing
-https://validator.w3.org/
+https://validator.w3.org/\
+Each HTML page was validated using the online HTML validator.\
+For the Home, About and Classes pages there was only an information section which could be safely ignored.
+![Responsive screenshot](assets/images/readme/html-validate.png)
+For the Contact page there were several warnings about missing section titles.\
+These were elected to be ignored as the legends for the forms doubled as titles for the sections. However this is not best practice and future development would fix these issues.
+![Responsive screenshot](assets/images/readme/html-contact-validate.png)
 ### CSS Validator Testing
-https://jigsaw.w3.org/css-validator/
+https://jigsaw.w3.org/css-validator/\
+The CSS page was validated using the online CSS validator. There were no warnings or errors reported.
+![Responsive screenshot](assets/images/readme/css-validate.png)
 ### Lighthouse Performance Testing
+The website performance was tested using Google Chrome Developer Tools Lighthouse feature.\
+The website hit good scores in Accessibility and Best Practices getting 94% and 100% respectively.\
+However the website only performed moderately well in Performance and SEO getting the scores 77% and 89% respectively. This was most likely due to the heavy use of images and photos for the website.
+![Responsive screenshot](assets/images/readme/lighthouse.png)
+
 
 ## Deployment
 This project was created with an environment consisting of the tools:

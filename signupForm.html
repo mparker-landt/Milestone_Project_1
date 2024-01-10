@@ -37,6 +37,7 @@
             </ul>
         </nav>
 
+        <!-- section to explain the sign up for the orchestra -->
         <section id="contactGeneral">
             <h2>Signup</h2>
             <p>Join our esteemed music academy and exhilarating orchestra by filling out the signup form.</p>
@@ -86,7 +87,7 @@
 
                         <div>
                             <label class="block-label" for="otherField">Any other information (Previous music groups, alternative qualification and titles etc)</label>
-                            <textarea class="formInput" id="otherField" rows="15" cols="100%" name="otherField"></textarea>
+                            <textarea class="formInput" id="otherField" rows="15" cols="100" name="otherField"></textarea>
                         </div>
                     </fieldset>
 
@@ -122,17 +123,19 @@
         <!-- email input for optional newsletter -->
         <section id="ContactNewsletter">
             <form action="https://formdump.codeinstitute.net" method="POST">
-                <legend>Newsletter</legend>
-                <p>Sign up to our newsletter to hear about special guest musicians and conductors. We also provide information about concerts and public performances.</p>
-                <p>We look forward to hearing from you!</p>
-                <label for="newsletter-field">Email: </label>
-                <input id="newsletter-field" type="email" name="newsletter" placeholder="Your email" required>
-                
-                <div class="formButton">
-                    <button type="submit">
-                        <strong>Submit</strong>
-                    </button>
-                </div>
+                <fieldset>
+                    <legend>Newsletter</legend>
+                    <p>Sign up to our newsletter to hear about special guest musicians and conductors. We also provide information about concerts and public performances.</p>
+                    <p>We look forward to hearing from you!</p>
+                    <label for="newsletter-field">Email: </label>
+                    <input id="newsletter-field" type="email" name="newsletter" placeholder="Your email" required>
+                    
+                    <div class="formButton">
+                        <button type="submit">
+                            <strong>Submit</strong>
+                        </button>
+                    </div>
+                </fieldset>
             </form>
         </section>
 
