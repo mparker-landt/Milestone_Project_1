@@ -242,8 +242,8 @@ And with additional acknowledgement to:
 * Renske Hoste, a friend who helped with design and layout tips
 ### Other Credits
 Particular mention to W3Schools and the StackOverflow Community that provided a lot of help with the coding.\
-In particular these pages were used for specific parts of the website:\
-https://www.w3schools.com/howto/howto_css_flip_box.asp\
-https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+In particular these pages were used for specific parts of the website:
+- https://www.w3schools.com/howto/howto_css_flip_box.asp to create containers that flip to reveal an underside on hover/tap.
+- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp to create a navbar that collapses into a burger icon on certain screen sizes.
 
 

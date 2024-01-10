@@ -167,10 +167,12 @@ header {
 
 .textBodyLeft {
     text-align: left;
+    padding: 2%;
 }
 
 .textBodyRight {
     text-align: right;
+    padding: 2%;
 }
 /********************************************************************************************************************************************************/
 
@@ -265,6 +267,10 @@ header {
 #aboutGeneral {
     padding: 1% 2%;
 }
+
+#aboutPartner {
+    align-items: center;
+}
 /*******************************************************************************************************************************************************/
 
 /* About Page Image Box flip actions ********************************************************************************************************************/
@@ -307,6 +313,12 @@ header {
 
 .flipBoxFront h2 {
     color: white;
+}
+
+.flipBoxFront a {
+    border: 3px solid white;
+    padding: 3px;
+    border-radius: 10px;
 }
 
 #flipBoxBrass {
@@ -552,6 +564,12 @@ button[type=submit] {
     margin-bottom: 20px;
 }
 
+.flexRow img {
+    margin: 1%;
+    background-color: grey;
+    position: inherit;
+}
+
 .flexCol {
     display: flex;
     flex-direction: column;
@@ -579,7 +597,7 @@ button[type=submit] {
     width: 49%;
     margin-left: 10px;
     margin-right: 10px;
-    overflow: none;
+    overflow: hidden;
 }
 
 .stickyTitle {
@@ -605,7 +623,8 @@ button[type=submit] {
     }
 
     .containerFlip {
-        width: auto;
+        width: 90%;
+        font-size: small;
         margin-bottom: 5px;
     }
 
@@ -614,7 +633,7 @@ button[type=submit] {
         margin: 5px 2px;
     }
 
-    /* Mobile burger navbar created with modified template code from https://www.w3schools.com/howto/howto_css_flip_box.asp */
+    /* Mobile burger navbar created with modified template code from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
     #homeClickthrough {
         flex-direction: column;
         font-size: small;
@@ -638,6 +657,11 @@ button[type=submit] {
     .flexRow {
         flex-direction: column;
         width: 100%;
+    }
+
+    .flexRow img {
+        width: 98%;
+        height: auto;
     }
 
     .classesScheduleBox {
@@ -692,9 +716,19 @@ button[type=submit] {
         width: 100%;
     }
 
+    .flexRow img {
+        width: 98%;
+        height: auto;
+    }
+
     .container {
         border-top: 2px solid white;
         padding: 2%;
+    }
+
+    .containerFlip {
+        font-size: small;
+        margin-bottom: 5px;
     }
 
     .classesScheduleBox {
@@ -804,9 +838,19 @@ button[type=submit] {
         width: 100%;
     }
 
+    .flexRow img {
+        width: 98%;
+        height: auto;
+    }
+
     .container {
         border-top: 2px solid white;
         padding: 2%;
+    }
+
+    .containerFlip {
+        font-size: small;
+        margin-bottom: 5px;
     }
 
     #homeClickthrough {
@@ -881,6 +925,9 @@ button[type=submit] {
 
     .container {
         width: 49%;
+    }
+
+    .containerClasses {
         height: 300px;
     }
 
