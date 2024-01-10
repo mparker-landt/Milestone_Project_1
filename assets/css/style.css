@@ -617,6 +617,7 @@ button[type=submit] {
     /* Mobile burger navbar created with modified template code from https://www.w3schools.com/howto/howto_css_flip_box.asp */
     #homeClickthrough {
         flex-direction: column;
+        font-size: small;
     }
 
     .displayRow {
@@ -696,6 +697,17 @@ button[type=submit] {
 
     .displayRow {
         flex-direction: column;
+    }
+
+    #address {
+        width: 98%;
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    #map {
+        height: 450px;
+        width: 98%;
     }
 
     #contactSignup {
@@ -781,6 +793,17 @@ button[type=submit] {
 
     .displayRow {
         flex-direction: column;
+    }
+
+    #address {
+        width: 98%;
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    #map {
+        height: 450px;
+        width: 98%;
     }
 }
 
