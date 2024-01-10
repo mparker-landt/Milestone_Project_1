@@ -794,19 +794,48 @@ button[type=submit] {
 }
 
 /* Larger than desktop */
-@media only screen and (min-width: 1000px) and (max-width: 1199px) {
-
-}
-
-/* Larger than Desktop HD */
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
-
-    #homeClickthrough {
-        flex-direction: row;
+@media only screen and (min-width: 1000px) {
+    #navBar {
+        position: sticky;
+        top: 0;
+        text-align: center;
     }
 
-    .displayRow {
-        flex-direction: row;
+    #navBar #menu {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #492600;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    #navBar li {
+        display: inline-block;
+        font-size: large;
+    }
+
+    #navBar a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    #navBar a.burgerIcon {
+        display: none;
+    }
+
+    #navBar a:hover {
+        background-color: #734a26;
+        color: white;
+    }
+
+    .active {
+        background-color: #734a26;
+        color: white;
     }
 }
 
