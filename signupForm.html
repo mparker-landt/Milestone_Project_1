@@ -37,7 +37,7 @@
             </ul>
         </nav>
 
-        <section>
+        <section id="contactGeneral">
             <h2>Signup</h2>
             <p>Join our esteemed music academy and exhilarating orchestra by filling out the signup form.</p>
             <p>Whether you're a budding musician or an experienced instrumentalist,</p>
@@ -55,27 +55,27 @@
 
                         <div>
                             <label for="nameField">First Name</label>
-                            <input class="form-input" id="nameField" type="text" name="nameField" placeholder="First Name" required>
+                            <input class="formInput" id="nameField" type="text" name="nameField" placeholder="First Name" required>
                             <label for="surnameField">Surname</label>
-                            <input class="form-input" id="surnameField" type="text" name="surnameField" placeholder="Surname" required>
+                            <input class="formInput" id="surnameField" type="text" name="surnameField" placeholder="Surname" required>
                         </div>
                         <div>
                             <label for="emailField">Email</label>
-                            <input class="form-input" id="emailField" type="email" name="emailField" placeholder="Your Email" required>
+                            <input class="formInput" id="emailField" type="email" name="emailField" placeholder="Your Email" required>
                         </div>
                         <div>
                             <label for="numberField">Contact Number</label>
-                            <input class="form-input" id="numberField" type="tel" pattern="[+]{1}[0-9]{3,45}" name="numberField" placeholder="Contact Number">
+                            <input class="formInput" id="numberField" type="tel" pattern="[0-9\-\+]{3,45}" name="numberField" placeholder="Contact Number">
                         </div>
 
                         <div>
                             <label for="ageField">Date of Birth</label>
-                            <input class="form-input" id="ageField" type="date" name="ageField" required>
+                            <input class="formInput" id="ageField" type="date" name="ageField" required>
                         </div>
 
                         <div>
                             <label for="experienceField">Experience</label>
-                            <select class="form-input" name="experienceField" id="experienceField">
+                            <select class="formInput" name="experienceField" id="experienceField">
                                 <option value="none">No musical experience</option>
                                 <option value="beginner">Beginner (LCM/ABRSM Grades 1-2)</option>
                                 <option value="intermediate">Medium (LCM/ABRSM Grades 3-5)</option>
@@ -86,7 +86,7 @@
 
                         <div>
                             <label class="block-label" for="otherField">Any other information (Previous music groups, alternative qualification and titles etc)</label>
-                            <textarea class="form-input" id="otherField" rows="15" cols="100%" name="otherField"></textarea>
+                            <textarea class="formInput" id="otherField" rows="15" cols="100%" name="otherField"></textarea>
                         </div>
                     </fieldset>
 

@@ -52,7 +52,6 @@ section {
 legend {
     padding: 15px 5px;
 }
-
 /********************************************************************************************************************************************************/
 
 
@@ -62,9 +61,6 @@ header {
     top: 0;
     width: 100%;
     background-color: #492600;
-    /* color: white; */
-    /* text-align: center;  */
-    /* font-size: x-large;  */
 }
 
 .headerImage {
@@ -133,7 +129,6 @@ header {
     background-color: #734a26;
     color: white;
 }
-
 /********************************************************************************************************************************************************/
 
 
@@ -142,7 +137,6 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
 }
 
 
@@ -151,7 +145,7 @@ header {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    padding: 1% 2%;
 }
 
 #homeAbout h2 {
@@ -159,14 +153,12 @@ header {
 }
 
 #homeAbout img {
-    /* border: 2px solid #402e32; */
     height: 450px;
     padding: 5px;
 }
 
 .textBody {
     padding: 1rem;
-    /* border: 2px solid #402e32; */
 }
 
 .textBody p {
@@ -180,7 +172,6 @@ header {
 .textBodyRight {
     text-align: right;
 }
-
 /********************************************************************************************************************************************************/
 
 
@@ -189,7 +180,6 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* width: 100%; */
     text-align: center;
 }
 
@@ -204,7 +194,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* position: relative; */
 
     box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .3);
 
@@ -229,7 +218,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* position: relative; */
 
     box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .3);
 
@@ -242,21 +230,18 @@ header {
     padding: 8px;
     border-radius: 10px;
 }
-
 /********************************************************************************************************************************************************/
 
 
 /* Home Page Contact Section children properties *******************************************************************************************************/
 #homeContact {
     height: fit-content;
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
 #address {
-    /* border: 2px solid #402e32; */
     height: 400px;
     width: 40%;
 }
@@ -270,13 +255,17 @@ header {
 }
 
 #map {
-    /* border: 2px solid #402e32; */
     height: 400px;
     width: 58%;
     padding: 5px;
 }
 /*******************************************************************************************************************************************************/
 
+/* About Page General Section properties ********************************************************************************************************************/
+#aboutGeneral {
+    padding: 1% 2%;
+}
+/*******************************************************************************************************************************************************/
 
 /* About Page Image Box flip actions ********************************************************************************************************************/
 .flipImg {
@@ -289,13 +278,9 @@ header {
     width: 100%;
     height: 100%;
     perspective: 1000px;
-    /* padding-left: 5%; */
-    /* padding-top: 1%; */
-    /* display: inline-block; */
 }
 
 .flipBoxInner {
-    /* position: relative; */
     width: 100%;
     height: 350px;
     text-align: center;
@@ -385,7 +370,6 @@ header {
 
 .classesScheduleContainer {
     color: #fafafa;
-    /* background-color: rgba(0, 0, 0, 0.6); */
     text-align: center;
 }
 
@@ -394,9 +378,7 @@ header {
 }
 
 .classesScheduleBox {
-    /* border: 1px solid blue; */
     height: 250px;
-    /* background-color: aquamarine; */
     width: 32%;
 
     background-color: rgba(0, 0, 0, 0.6);
@@ -406,7 +388,13 @@ header {
     justify-content: center;
     margin: 10px 2px;
 }
+/*******************************************************************************************************************************************************/
 
+
+/* Contact Page General Section properties ********************************************************************************************************************/
+#contactGeneral {
+    padding: 1% 2%;
+}
 /*******************************************************************************************************************************************************/
 
 
@@ -415,9 +403,7 @@ header {
     background-color: inherit;
     border: 5px solid #c4a484;
     text-align: center;
-    /* flex: 1; */
-    width: 66%;
-    margin-right: 1%;
+    padding: 1% 2%;
 }
 
 #contactSignup input {
@@ -429,12 +415,9 @@ header {
 
 #contactSignup fieldset {
     text-align: center;
-    /* display: block; */
 }
 
 #contactSignup div {
-    /* border: 1px solid #492600; */
-    /* width: 100%; */
     padding: 5px 0;
 }
 
@@ -445,7 +428,6 @@ header {
 select {
     padding: 10px;
     border-radius: 10px;
-    ;
 }
 
 textarea {
@@ -453,6 +435,8 @@ textarea {
     border-radius: 10px;
     box-shadow: 0 0 15px 4px rgba(156, 95, 15, 0.06);
     background-color: rgba(233, 233, 237, 1.0);
+    resize: none;
+    width: 80%;
 }
 
 .block-label {
@@ -471,24 +455,20 @@ fieldset legend {
     margin: auto;
     text-align: center;
 }
-
 /*******************************************************************************************************************************************************/
 
 
 /* Contact Page Contact Details Section properties ****************************************************************************************************/
 #contactAddress {
     text-align: center;
-    /* flex: 1; */
     align-self: stretch;
-    width: 33%;
     height: auto;
-    margin-left: 1%;
+    padding: 1% 2%;
 }
 
 #contactAddress h2 {
     padding-bottom: 5%;
 }
-
 /*******************************************************************************************************************************************************/
 
 
@@ -497,16 +477,17 @@ fieldset legend {
     background-color: inherit;
     border: 5px solid #c4a484;
     text-align: center;
-    /* height: 100px; */
     height: fit-content;
+    padding: 1% 2%;
 }
 
 #ContactNewsletter input {
-    padding: 10px;
+    padding: 10px 2%;
     border-radius: 10px;
     box-shadow: 0 0 15px 4px rgba(156, 95, 15, 0.06);
     background-color: rgba(233, 233, 237, 1.0);
-    min-width: 320px;
+    width: 320px;
+    max-width: 80%;
 }
 
 #ContactNewsletter legend {
@@ -521,23 +502,12 @@ button[type=submit] {
     border: none;
     border-radius: 5px;
 }
-
 /*******************************************************************************************************************************************************/
 
 
 /* All pages Footer and its children properties *********************************************************************************************************/
 .footer {
-    /* position: relative; */
-    /* left: 0; */
-    /* bottom: 0; */
-    /* height: 165px; */
-    /* width: 100%; */
     background-color: #492600;
-
-    /* justify-content: center; */
-    /* align-items: center; */
-
-    /* text-align: center; */
     color: white;
     font-size: 175%;
 }
@@ -560,7 +530,6 @@ button[type=submit] {
     padding: 15px;
     font-size: x-small;
 }
-
 /********************************************************************************************************************************************************/
 
 
@@ -589,13 +558,10 @@ button[type=submit] {
 }
 
 .flexBox {
-    /* border: 1px solid blue; */
-    /* border: 1px solid #492600; */
     background-color: #c4a484;
-    /* width: 32%; */
 }
 
-.flexBox>p {
+.flexBox > p {
     padding: 5px 0;
 }
 
@@ -658,18 +624,14 @@ button[type=submit] {
     }
 
     #address {
-        /* border: 2px solid #402e32; */
-        /* height: 400px; */
         width: 98%;
         height: auto;
         padding-bottom: 15px;
     }
 
     #map {
-        /* border: 2px solid #402e32; */
         height: 450px;
         width: 98%;
-        /* padding: 5px; */
     }
 
     .flexRow {
@@ -686,7 +648,6 @@ button[type=submit] {
     }
 
     #contactSignup {
-        width: 95%;
         margin: 20px 5%;
     }
 
@@ -703,7 +664,7 @@ button[type=submit] {
         display: block;
     }
 
-    #contactSignup div input {
+    .formInput {
         width: 90%;
     }
 
@@ -735,6 +696,36 @@ button[type=submit] {
 
     .displayRow {
         flex-direction: column;
+    }
+
+    #contactSignup {
+        margin: 20px 5%;
+    }
+
+    #contactSignup form {
+        width: 100%;
+    }
+
+    #contactSignup fieldset {
+        width: 100%;
+        text-align: center;
+    }
+
+    #contactSignup div label {
+        display: block;
+    }
+
+    .formInput {
+        width: 90%;
+    }
+
+    #contactSignup div select {
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+        padding: 0;
     }
 }
 
@@ -837,8 +828,16 @@ button[type=submit] {
         background-color: #734a26;
         color: white;
     }
+
+    #contactSignup {
+        width: 66%;
+        margin-right: 1%;
+    }
+
+    #contactAddress {
+        width: 33%;
+        margin-left: 1%;
+    }
 }
 
 /********************************************************************************************************************************************************/
-
-
