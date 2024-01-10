@@ -567,7 +567,6 @@ button[type=submit] {
 
 .container {
     height: auto;
-    width: 49%;
     margin-left: 0;
     margin-right: 0;
     overflow: scroll;
@@ -601,7 +600,8 @@ button[type=submit] {
     }
 
     .container {
-        margin-bottom: 5px;
+        border-top: 2px solid white;
+        padding: 2%;
     }
 
     .containerFlip {
@@ -638,10 +638,6 @@ button[type=submit] {
     .flexRow {
         flex-direction: column;
         width: 100%;
-    }
-
-    .container {
-        width: 100%
     }
 
     .classesScheduleBox {
@@ -690,6 +686,22 @@ button[type=submit] {
 
 /* Larger than phablet */
 @media only screen and (min-width: 550px) and (max-width: 749px) {
+
+    .flexRow {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container {
+        border-top: 2px solid white;
+        padding: 2%;
+    }
+
+    .classesScheduleBox {
+        width: auto;
+        margin: 5px 2px;
+        border: 1px solid white;
+    }
 
     #homeClickthrough {
         flex-direction: column;
@@ -787,8 +799,23 @@ button[type=submit] {
         color: white;
     }
 
+    .flexRow {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container {
+        border-top: 2px solid white;
+        padding: 2%;
+    }
+
     #homeClickthrough {
         flex-direction: row;
+    }
+
+    .classesScheduleBox {
+        width: auto;
+        margin: 5px 2px;
     }
 
     .displayRow {
@@ -850,6 +877,11 @@ button[type=submit] {
     .active {
         background-color: #734a26;
         color: white;
+    }
+
+    .container {
+        width: 49%;
+        height: 300px;
     }
 
     #contactSignup {
