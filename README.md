@@ -20,11 +20,11 @@ The purpose of this static website was to provide a classical music orchestra an
 The website is split into 4 pages, a Home Page, About Page, Classes Page and Contact Page.
 
 The target audience would be string instrument musicians looking to join an orchestra. Particular focus is on attracting novice players that have an interest in learning string instruments.\
-The services are also provided for younger musicians and juniors who want to learn / continue thier learning. 
+The services are also provided for younger musicians and juniors who want to learn / continue their learning. 
 
 Registration is done through a sign up form or by using the provided contact details. A newsletter can also be signed up to for news updates. 
 
-## Table of Content
+## Table of Contents
 + [UX](#ux "UX")
   + [User Demographic](user-demographic "User Demographic")
   + [User Stories](user-stories "User Stories")
@@ -67,7 +67,7 @@ This website is targeted towards:
 #### First time Users Stories:
 - As a new user I want to be able to see what services are provided for complete novices so I can start practicing music.
 - As a new user I want to be able to see what services are provided for experienced musicians so I can continue practicing music.
-- As a new user I want to be able to find out here the group is situated and what the contact details are.
+- As a new user I want to be able to find out where the group is situated and what the contact details are.
 - As a new user I want to be able to sign up to join the group.
 #### Returning Users Stories:
 - As a returning user I want to be able to quickly navigate to the social media links.
@@ -154,10 +154,10 @@ Every page has the same header with header image and title as well as a navigati
 
 #### About Page
 - The About Page consists of an overall Orchestra, VIP People and Partner Group sections.
-- The Orchestra section shows the history and information of the Allegro Symphony Group since it's founding.
+- The Orchestra section shows the history and information of the Allegro Symphony Group since its founding.
 - The VIP people section consists of images and text information about people that make up the Allegro Symphony Group.
 - The Partner Group section consists of boxes that provide information about other websites.
-- Each Partner Group section box has a front face that shows a picture, on hover or tap this "flips" to provide a back face that has information and an ecternal link to the other group.
+- Each Partner Group section box has a front face that shows a picture, on hover or tap this "flips" to provide a back face that has information and an external link to the other group.
 
 ![Responsive screenshot](assets/images/readme/aboutpage.png)
 
@@ -193,7 +193,7 @@ Every page has the same header with header image and title as well as a navigati
 - [Draw.io](https://www.drawio.com/)
 
 ## Testing
-Testing of the website was performed throughout it's development period.\
+Testing of the website was performed throughout its development period.\
 The local files were opened and used in a Firefox or Chrome Web browser to view the visual and functional bugs.\
 Browser Developer Tools were used to debug the code and explore mobile screens.
 
@@ -220,12 +220,12 @@ https://github.com/mparker-landt/Milestone_Project_1
 * Link to the live link:
 https://mparker-landt.github.io/Milestone_Project_1/
 
-To aquire the code:
+To acquire the code:
 - Log into Github
 - Navigate to the project link
 - On the project page click the Code button
 - Clone or download the zip of the code
-- Open the poject in an environment of your choice\
+- Open the project in an environment of your choice
 
 \
 All content on the website was produced by the author of the project and is fiction. \
@@ -238,10 +238,10 @@ With big thanks to my mentors:
 * Lauren-Nicole Popich from the Code Institute who provided a massive amount of help with the assignment and code review.
 * Manuel Perez Romero, my mentor from the Bristol of City College who provide help and examples for the project.
 
-And with additional aknowledgement to:
+And with additional acknowledgement to:
 * Renske Hoste, a friend who helped with design and layout tips
 ### Other Credits
-Particular mention to W3Schools  and the StackOverflow Community that provided a lot of help with the coding.\
+Particular mention to W3Schools and the StackOverflow Community that provided a lot of help with the coding.\
 In particular these pages were used for specific parts of the website:\
 https://www.w3schools.com/howto/howto_css_flip_box.asp\
 https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
