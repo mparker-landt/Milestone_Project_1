@@ -627,7 +627,7 @@ button[type=submit] {
 
 /* All Pages Mobile first queries ***********************************************************************************************************************/
 /* Larger than mobile */
-@media only screen and (min-width: 350px) and (max-width: 549px) {
+@media only screen and (min-width: 290px) and (max-width: 549px) {
 
     img {
         width: 98%;
